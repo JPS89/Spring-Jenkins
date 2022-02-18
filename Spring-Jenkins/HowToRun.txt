@@ -1,0 +1,2 @@
+Aufruf von Jenkins http://localhost:8085/
+Start-Scripte für Jenkins sind auf dem Desktop hinterlegt
