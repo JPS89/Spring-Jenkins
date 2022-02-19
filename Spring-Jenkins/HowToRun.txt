@@ -1,2 +1,6 @@
 Aufruf von Jenkins http://localhost:8085/
 Start-Scripte für Jenkins sind auf dem Desktop hinterlegt
+
+Wenn ein push in githib vorgenommen wird, wird automatisch ein Build über Jenkins erzeugt, da der Build-Auslöser
+in den Jenkins-Job hinterlegt ist.
+
