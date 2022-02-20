@@ -1,6 +1,14 @@
 Aufruf von Jenkins http://localhost:8085/
 Start-Scripte für Jenkins sind auf dem Desktop hinterlegt
 
-Wenn ein push in githib vorgenommen wird, wird automatisch ein Build über Jenkins erzeugt, da der Build-Auslöser
-in den Jenkins-Job hinterlegt ist.
+Wenn ein push in github vorgenommen wird, wird automatisch die Build-Pipeline "Spring Jenkins" gestartet, wenn der 
+Build-Auslöser -> Source Code Management System abfragen -> Wert: "* * * * * " gesetzt ist (aktuell nicht gesetzt).
+
+Die "Spring-Jenkins-Pipeline" besteht aus den einzelnen Pipelines
+- Dev-Spring-Jenkins
+- AB-Spring-Jenkins
+- PROD-Spring-Jenkins
+die nacheinander abgearbeitet werden.
+Da hier Build-Auslöser -> Source Code Management System abfragen -> Wert: "* * * * * " bereits gesetzt ist,
+wird die "Spring-Jenkins-Pipeline" nach jedem push ins github automatisch gestartet.
 
